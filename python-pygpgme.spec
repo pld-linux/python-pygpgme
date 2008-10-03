@@ -1,7 +1,7 @@
 Summary:	A Python wrapper for the GPGME library
 Name:		python-pygpgme
 Version:	0.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/p/pygpgme/pygpgme-%{version}.tar.gz

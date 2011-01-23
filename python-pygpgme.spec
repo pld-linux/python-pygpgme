@@ -9,6 +9,8 @@ Source0:	http://pypi.python.org/packages/source/p/pygpgme/pygpgme-%{version}.tar
 URL:		https://launchpad.net/products/pygpgme
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	gpgme-devel
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

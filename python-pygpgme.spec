@@ -7,7 +7,7 @@ Summary:	A Python 2 wrapper for the GPGME library
 Summary(pl.UTF-8):	Interfejs Pythona 2 do biblioteki GPGME
 Name:		python-pygpgme
 Version:	0.3
-Release:	4
+Release:	5
 License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/p/pygpgme/pygpgme-%{version}.tar.gz

@@ -7,7 +7,7 @@ Summary:	A Python 2 wrapper for the GPGME library
 Summary(pl.UTF-8):	Interfejs Pythona 2 do biblioteki GPGME
 Name:		python-pygpgme
 Version:	0.3
-Release:	5
+Release:	6
 License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/p/pygpgme/pygpgme-%{version}.tar.gz
@@ -62,36 +62,24 @@ Ten pakiet zawiera moduł Pythona 3.
 
 %build
 %if %{with python2}
-%py_build \
-	--build-base build-2
+%py_build
 %endif
 
 %if %{with python3}
-%py3_build \
-	--build-base build-3
+%py3_build
 %endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %if %{with python2}
-%{__python} setup.py \
-	build \
-		--build-base build-2 \
-	install \
-		--optimize=2 \
-		--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 %endif
 
 %if %{with python3}
-%{__python3} setup.py \
-	build \
-		--build-base build-3 \
-	install \
-		--optimize=2 \
-		--root=$RPM_BUILD_ROOT
+%py3_install
 %endif
 
 %clean
